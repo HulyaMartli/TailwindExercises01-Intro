@@ -26,6 +26,10 @@ export default {
         'gega-grey': '#DDDDDD',
         'gega-white': '#F7F7F7',
       },
+
+      screens: {
+        'xs': '375px',
+      }
     },
   },
   plugins: [],
