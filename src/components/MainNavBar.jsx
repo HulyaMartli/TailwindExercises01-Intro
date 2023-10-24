@@ -27,9 +27,9 @@ export default function MainNavBar() {
                 </div>
 
                 {/* NAVIGATION */}
-                <nav className={`${showMenu} md:flex justify-between lg:flex-1 md:translate-y-0 md:bg-transparent md:pt-0 md:mt-0  xs:bg-black xs:h-100 xs:translate-y-36 xs:py-5 xs:overflow-hidden xs:end-0 z-50`} onClick={handleMenuClick}>
+                <nav className={`${showMenu} md:flex justify-between md:mt-5 lg:flex-1 md:translate-y-0 md:bg-transparent md:pt-0 md:mt-0 xs:bg-black xs:h-100 xs:translate-y-36 xs:py-5 xs:overflow-hidden xs:end-0 z-50`} onClick={handleMenuClick}>
                     {/* MENU */}
-                    <div className="xs:flex-col md:flex-row flex items-center lg:text-2xl xs:space-x-0 md:space-x-4 lg:space-x-8 ">
+                    <div className="xs:flex-col md:flex-row flex items-center lg:text-xl xs:space-x-0 md:space-x-4 lg:space-x-8 ">
                         <a href="#" className="hover:text-mov-melon transition duration-500">movies</a>
                         <a href="#" className="hover:text-mov-melon transition duration-500">celebrities</a>
                         <a href="#" className="hover:text-mov-melon transition duration-500">blog</a>
