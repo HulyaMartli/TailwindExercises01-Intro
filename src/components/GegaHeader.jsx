@@ -29,7 +29,7 @@ export default function GegaHeader() {
                 {/* NAVIGATION */}
                 <nav className={`${showMenu} md:flex justify-between lg:flex-1 md:translate-y-0 md:bg-transparent md:pt-0 md:mt-0 xs:mt-24 xs:bg-black xs:h-screen xs:translate-y-80 xs:pt-5 xs:overflow-hidden`} onClick={handleMenuClick}>
                     {/* MENU */}
-                    <div className="xs:flex-col md:flex-row flex items-center lg:text-2xl space-x-4 lg:space-x-8">
+                    <div className="xs:flex-col md:flex-row flex items-center lg:text-2xl xs:space-x-0 md:space-x-4 lg:space-x-8 ">
                         <a href="#" className="hover:text-gega-melon transition duration-500">movies</a>
                         <a href="#" className="hover:text-gega-melon transition duration-500">celebrities</a>
                         <a href="#" className="hover:text-gega-melon transition duration-500">blog</a>
@@ -45,7 +45,7 @@ export default function GegaHeader() {
                             <button className="me-4 "><i className="fa-solid fa-magnifying-glass group-hover:text-gega-red transition duration-500"></i></button>
                         </form>
                         <div className="xs:flex-col md:flex-row flex lg:text-xl space-x-4 items-center me-4">
-                            <a href="#" className="hover:text-gega-melon transition duration-500 xs:ms-3">LOGIN</a>
+                            <a href="#" className="hover:text-gega-melon transition duration-500 xs:ms-3 xs:mb-1">LOGIN</a>
                             <button className="bg-gega-red rounded px-3 py-1 hover:bg-gega-melon hover:text-black transition duration-500 whitespace-nowrap font-gemunu">SIGN UP</button>
                         </div>
                     </div>
