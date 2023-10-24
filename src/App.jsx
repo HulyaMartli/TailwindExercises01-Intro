@@ -1,21 +1,19 @@
 import './App.css'
 import MainNavBar from './components/MainNavBar'
 
-function App() {
+export default function App() {
 
   return (
     <>
       <MainNavBar />
       <HeroSection />
+      <MoviesSection />
     </>
   )
 }
 
-export default App
-
 function HeroSection() {
   return (
-    <>
       <section className='h-64 md:h-96 lg:h-128 group relative'>
           {/* HERO IMAGE */}
           <img src='https://c4.wallpaperflare.com/wallpaper/999/51/612/art-artistic-artwork-fantasy-wallpaper-preview.jpg' alt='The Lord of The Rings The One Ring' className='h-full w-full object-cover'></img>
@@ -37,8 +35,126 @@ function HeroSection() {
               </div>
             </div>
           </div>
-          <i class="fa-solid fa-chevron-right text-mov-grey absolute xs:text-7xl lg:text-9xl top-1/3 end-3 hover:text-mov-white cursor-pointer"></i>
+          <i className="fa-solid fa-chevron-right text-mov-grey absolute xs:text-7xl lg:text-9xl top-1/3 end-3 hover:text-mov-white cursor-pointer"></i>
       </section>
-    </>
+  )
+}
+
+function MoviesSection(){
+  return(
+    <section className='py-24 xs:p-6 md:p-8 lg:p-0'>
+      <div className="container flex space-x-16">
+        {/* MOVIE POSTERS */}
+        <div className='basis-2/3'>
+          <div className="flex space-x-2 divide-x divide-mov-melon divide-opacity-70 mb-8 text-mov-grey">
+            <h2 className='text-mov-melon underline'><a href="#">Best</a></h2>
+            <h2 className='ps-2 hover:text-mov-melon duration-500'><a href="#">Popular</a></h2>
+            <h2 className='ps-2 hover:text-mov-melon duration-500'><a href="#">Latest</a></h2>
+          </div>
+          <div className="flex flex-wrap">
+            <div className='relative group overflow-hidden basis-1/3'>
+                <img src="https://m.media-amazon.com/images/M/MV5BMmY5ZGE4NmUtZWI4OS00ZWJmLWFjMzgtOWUyZjI4NDg3Y2E5XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_QL75_UX190_CR0,0,190,281_.jpg" alt="Talk To Me 2022" className='group-hover:scale-110 group-hover:opacity-50 duration-500 w-full'/>
+                <div className="absolute bottom-0 w-full p-3 bg-black bg-opacity-70 text-mov-grey">
+                  <h3 className='group-hover:text-mov-melon group-hover:mb-1 duration-500'>TALK TO ME</h3>
+                  <div className='hidden text-xs group-hover:block group-hover:mb-2 transition duration-1000 w-48'>
+                  <p className='mb-2 group-hover:mb-4 duration-500'>When a group of friends discover how to conjure spirits using an embalmed hand, they unleash terrifying supernatural forces.</p>
+                  <a className='hover:text-mov-melon me-4 text-lg' href=""><i className="fa-solid fa-play"></i></a>
+                  <a className='hover:text-mov-melon text-xl' href=""><i className="fa-brands fa-imdb"></i></a>
+                  </div>
+                </div>
+            </div>
+            <div className='relative group overflow-hidden basis-1/3'>
+                <img src="https://m.media-amazon.com/images/M/MV5BMmY5ZGE4NmUtZWI4OS00ZWJmLWFjMzgtOWUyZjI4NDg3Y2E5XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_QL75_UX190_CR0,0,190,281_.jpg" alt="Talk To Me 2022" className='group-hover:scale-110 group-hover:opacity-50 duration-500 w-full'/>
+                <div className="absolute bottom-0 w-full p-3 bg-black bg-opacity-70 text-mov-grey">
+                  <h3 className='group-hover:text-mov-melon group-hover:mb-1 duration-500'>TALK TO ME</h3>
+                  <div className='hidden text-xs group-hover:block group-hover:mb-2 transition duration-1000 w-48'>
+                  <p className='mb-2 group-hover:mb-4 duration-500'>When a group of friends discover how to conjure spirits using an embalmed hand, they unleash terrifying supernatural forces.</p>
+                  <a className='hover:text-mov-melon me-4 text-lg' href=""><i className="fa-solid fa-play"></i></a>
+                  <a className='hover:text-mov-melon text-xl' href=""><i className="fa-brands fa-imdb"></i></a>
+                  </div>
+                </div>
+            </div>
+            <div className='relative group overflow-hidden basis-1/3'>
+                <img src="https://m.media-amazon.com/images/M/MV5BMmY5ZGE4NmUtZWI4OS00ZWJmLWFjMzgtOWUyZjI4NDg3Y2E5XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_QL75_UX190_CR0,0,190,281_.jpg" alt="Talk To Me 2022" className='group-hover:scale-110 group-hover:opacity-50 duration-500 w-full'/>
+                <div className="absolute bottom-0 w-full p-3 bg-black bg-opacity-70 text-mov-grey">
+                  <h3 className='group-hover:text-mov-melon group-hover:mb-1 duration-500'>TALK TO ME</h3>
+                  <div className='hidden text-xs group-hover:block group-hover:mb-2 transition duration-1000 w-48'>
+                  <p className='mb-2 group-hover:mb-4 duration-500'>When a group of friends discover how to conjure spirits using an embalmed hand, they unleash terrifying supernatural forces.</p>
+                  <a className='hover:text-mov-melon me-4 text-lg' href=""><i className="fa-solid fa-play"></i></a>
+                  <a className='hover:text-mov-melon text-xl' href=""><i className="fa-brands fa-imdb"></i></a>
+                  </div>
+                </div>
+            </div>
+            <div className='relative group overflow-hidden basis-1/3'>
+                <img src="https://m.media-amazon.com/images/M/MV5BMmY5ZGE4NmUtZWI4OS00ZWJmLWFjMzgtOWUyZjI4NDg3Y2E5XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_QL75_UX190_CR0,0,190,281_.jpg" alt="Talk To Me 2022" className='group-hover:scale-110 group-hover:opacity-50 duration-500 w-full'/>
+                <div className="absolute bottom-0 w-full p-3 bg-black bg-opacity-70 text-mov-grey">
+                  <h3 className='group-hover:text-mov-melon group-hover:mb-1 duration-500'>TALK TO ME</h3>
+                  <div className='hidden text-xs group-hover:block group-hover:mb-2 transition duration-1000 w-48'>
+                  <p className='mb-2 group-hover:mb-4 duration-500'>When a group of friends discover how to conjure spirits using an embalmed hand, they unleash terrifying supernatural forces.</p>
+                  <a className='hover:text-mov-melon me-4 text-lg' href=""><i className="fa-solid fa-play"></i></a>
+                  <a className='hover:text-mov-melon text-xl' href=""><i className="fa-brands fa-imdb"></i></a>
+                  </div>
+                </div>
+            </div>
+            <div className='relative group overflow-hidden basis-1/3'>
+                <img src="https://m.media-amazon.com/images/M/MV5BMmY5ZGE4NmUtZWI4OS00ZWJmLWFjMzgtOWUyZjI4NDg3Y2E5XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_QL75_UX190_CR0,0,190,281_.jpg" alt="Talk To Me 2022" className='group-hover:scale-110 group-hover:opacity-50 duration-500 w-full'/>
+                <div className="absolute bottom-0 w-full p-3 bg-black bg-opacity-70 text-mov-grey">
+                  <h3 className='group-hover:text-mov-melon group-hover:mb-1 duration-500'>TALK TO ME</h3>
+                  <div className='hidden text-xs group-hover:block group-hover:mb-2 transition duration-1000 w-48'>
+                  <p className='mb-2 group-hover:mb-4 duration-500'>When a group of friends discover how to conjure spirits using an embalmed hand, they unleash terrifying supernatural forces.</p>
+                  <a className='hover:text-mov-melon me-4 text-lg' href=""><i className="fa-solid fa-play"></i></a>
+                  <a className='hover:text-mov-melon text-xl' href=""><i className="fa-brands fa-imdb"></i></a>
+                  </div>
+                </div>
+            </div>
+            <div className='relative group overflow-hidden basis-1/3'>
+                <img src="https://m.media-amazon.com/images/M/MV5BMmY5ZGE4NmUtZWI4OS00ZWJmLWFjMzgtOWUyZjI4NDg3Y2E5XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_QL75_UX190_CR0,0,190,281_.jpg" alt="Talk To Me 2022" className='group-hover:scale-110 group-hover:opacity-50 duration-500 w-full'/>
+                <div className="absolute bottom-0 w-full p-3 bg-black bg-opacity-70 text-mov-grey">
+                  <h3 className='group-hover:text-mov-melon group-hover:mb-1 duration-500'>TALK TO ME</h3>
+                  <div className='hidden text-xs group-hover:block group-hover:mb-5 transition duration-1000 w-48'>
+                  <p className='mb-2 duration-500'>When a group of friends discover how to conjure spirits using an embalmed hand, they unleash terrifying supernatural forces.</p>
+                  <a className='hover:text-mov-melon me-4 text-lg' href=""><i className="fa-solid fa-play"></i></a>
+                  <a className='hover:text-mov-melon text-xl' href=""><i className="fa-brands fa-imdb"></i></a>
+                  </div>
+                </div>
+            </div>
+            <div className='relative group overflow-hidden basis-1/3'>
+                <img src="https://m.media-amazon.com/images/M/MV5BMmY5ZGE4NmUtZWI4OS00ZWJmLWFjMzgtOWUyZjI4NDg3Y2E5XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_QL75_UX190_CR0,0,190,281_.jpg" alt="Talk To Me 2022" className='group-hover:scale-110 group-hover:opacity-50 duration-500 w-full'/>
+                <div className="absolute bottom-0 w-full p-3 bg-black bg-opacity-70 text-mov-grey">
+                  <h3 className='group-hover:text-mov-melon group-hover:mb-1 duration-500'>TALK TO ME</h3>
+                  <div className='hidden text-xs group-hover:block group-hover:mb-5 transition duration-1000 w-48'>
+                  <p className='mb-2 duration-500'>When a group of friends discover how to conjure spirits using an embalmed hand, they unleash terrifying supernatural forces.</p>
+                  <a className='hover:text-mov-melon me-4 text-lg' href=""><i className="fa-solid fa-play"></i></a>
+                  <a className='hover:text-mov-melon text-xl' href=""><i className="fa-brands fa-imdb"></i></a>
+                  </div>
+                </div>
+            </div>
+            <div className='relative group overflow-hidden basis-1/3'>
+                <img src="https://m.media-amazon.com/images/M/MV5BMmY5ZGE4NmUtZWI4OS00ZWJmLWFjMzgtOWUyZjI4NDg3Y2E5XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_QL75_UX190_CR0,0,190,281_.jpg" alt="Talk To Me 2022" className='group-hover:scale-110 group-hover:opacity-50 duration-500 w-full'/>
+                <div className="absolute bottom-0 w-full p-3 bg-black bg-opacity-70 text-mov-grey">
+                  <h3 className='group-hover:text-mov-melon group-hover:mb-1 duration-500'>TALK TO ME</h3>
+                  <div className='hidden text-xs group-hover:block group-hover:mb-5 transition duration-1000 w-48'>
+                  <p className='mb-2 duration-500'>When a group of friends discover how to conjure spirits using an embalmed hand, they unleash terrifying supernatural forces.</p>
+                  <a className='hover:text-mov-melon me-4 text-lg' href=""><i className="fa-solid fa-play"></i></a>
+                  <a className='hover:text-mov-melon text-xl' href=""><i className="fa-brands fa-imdb"></i></a>
+                  </div>
+                </div>
+            </div>
+            <div className='relative group overflow-hidden basis-1/3'>
+                <img src="https://m.media-amazon.com/images/M/MV5BMmY5ZGE4NmUtZWI4OS00ZWJmLWFjMzgtOWUyZjI4NDg3Y2E5XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_QL75_UX190_CR0,0,190,281_.jpg" alt="Talk To Me 2022" className='group-hover:scale-110 group-hover:opacity-50 duration-500 w-full'/>
+                <div className="absolute bottom-0 w-full p-3 bg-black bg-opacity-70 text-mov-grey">
+                  <h3 className='group-hover:text-mov-melon group-hover:mb-1 duration-500'>TALK TO ME</h3>
+                  <div className='hidden text-xs group-hover:block group-hover:mb-5 transition duration-1000 w-48'>
+                  <p className='mb-2 duration-500'>When a group of friends discover how to conjure spirits using an embalmed hand, they unleash terrifying supernatural forces.</p>
+                  <a className='hover:text-mov-melon me-4 text-lg' href=""><i className="fa-solid fa-play"></i></a>
+                  <a className='hover:text-mov-melon text-xl' href=""><i className="fa-brands fa-imdb"></i></a>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div className="basis-1/3"></div>
+      </div>
+    </section>
   )
 }
