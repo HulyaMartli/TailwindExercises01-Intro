@@ -21,14 +21,17 @@ export default {
       },
 
       colors: {
-        'gega-red': '#BC1A45',
-        'gega-melon': '#FFD369',
-        'gega-grey': '#DDDDDD',
-        'gega-white': '#F7F7F7',
+        'mov-melon': '#FFD369',
+        'mov-grey': '#DDDDDD',
+        'mov-white': '#F7F7F7',
       },
 
       screens: {
         'xs': '375px',
+      },
+
+      spacing: {
+        '128': '32rem',
       }
     },
   },

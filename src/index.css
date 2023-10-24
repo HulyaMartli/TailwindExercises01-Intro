@@ -13,7 +13,7 @@
         @apply font-gemunu uppercase;
     }
 
-    a {
+    a, button {
         @apply font-gemunu;
     }
 }
