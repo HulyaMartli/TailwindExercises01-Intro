@@ -128,7 +128,7 @@ function MoviesSection() {
           </div>
         </div>
         <div className="basis-1/3">
-          <h2 className='underline xs:text-sm sm:text-2xl text-mov-grey mb-8'>IMDB TOP PICKS</h2>
+          <h2 className='xs:text-sm sm:text-2xl text-mov-grey mb-8 flex items-center'><i className="fa-brands fa-imdb text-5xl me-2 text-mov-melon"></i>TOP PICKS</h2>
           <div className="flex flex-col h-full justify-center space-y-2">
             <div className="flex items-center group space-x-4">
               <div className='basis-1/3 h-full'>
